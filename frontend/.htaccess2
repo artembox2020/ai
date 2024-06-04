@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^backend\.k4225675\.beget\.tech$ [NC]
+RewriteCond %{SCRIPT_NAME}% !indexxx.php
+RewriteRule ^public_html(.*)$ backend/public_html$1 [L]
